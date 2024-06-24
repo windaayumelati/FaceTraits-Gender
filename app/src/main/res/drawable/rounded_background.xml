@@ -1,0 +1,9 @@
+<!-- rounded_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/ungumuda"/> <!-- Warna background -->
+    <corners android:radius="8dp"/> <!-- Sudut yang dibulatkan -->
+    <stroke
+        android:width="1dp"
+    android:color="@color/ungumuda"/> <!-- Warna garis kotak -->
+</shape>

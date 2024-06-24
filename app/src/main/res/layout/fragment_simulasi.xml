@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Prediction Input TextView -->
+        <TextView
+            android:id="@+id/txtPredictionInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Input Prediksi"
+            android:textSize="22sp"
+            android:textColor="#555555"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Edit Texts -->
+
+        <!-- Edit Text 1 -->
+        <EditText
+            android:id="@+id/edtLongHair"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Apakah Rambut Panjang?\n(0: No, 1: Yes)"
+            android:inputType="number"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtPredictionInput"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Edit Text 2 -->
+        <EditText
+            android:id="@+id/edtForeheadWidth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Input Lebar Dahi (cm)\n(min: 11.4, max: 15.5)"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtLongHair"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Edit Text 3 -->
+        <EditText
+            android:id="@+id/edtForeheadHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Input Panjang Dahi (cm)\n(min: 5.1, max: 7.1)"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtForeheadWidth"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Edit Text 4 -->
+        <EditText
+            android:id="@+id/edtNoseWide"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Apakah Hidung Lebar?\n(0: No, 1: Yes)"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtForeheadHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Edit Text 5 -->
+        <EditText
+            android:id="@+id/edtNoseLong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Apakah Hidung Panjang?\n(0: No, 1: Yes)"
+            android:inputType="number"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtNoseWide"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Edit Text 6 -->
+        <EditText
+            android:id="@+id/edtLipsThin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Apakah Bibir Tipis?\n(0: No, 1: Yes)"
+            android:inputType="number"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtNoseLong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Edit Text 7 -->
+        <EditText
+            android:id="@+id/edtDistanceNoseToLipLong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Apakah Jarak Hidung ke Bibir Panjang?\n(0: No, 1: Yes)"
+            android:inputType="number"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtLipsThin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Predict Button -->
+        <Button
+            android:id="@+id/btnPredict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediksi Gender"
+            android:textColor="@android:color/white"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textSize="17sp"
+            android:backgroundTint="@color/DarkBlue"
+            app:cornerRadius="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtDistanceNoseToLipLong"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="35dp"
+            android:textAllCaps="false"/>
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@+id/btnPredict"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

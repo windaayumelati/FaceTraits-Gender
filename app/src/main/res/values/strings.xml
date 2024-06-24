@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FaceTraits Gender</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="nav_tentang_title">Tentang Aplikasi</string>
+    <string name="nav_dataset_title">Dataset</string>
+    <string name="nav_fitur_title">Fitur</string>
+    <string name="nav_model_title">Model</string>
+    <string name="nav_simulasimodel_title">Simulasi Model</string>
+
+    <!-- Deskripsi Aplikasi -->
+    <string name="Deskripsi">Prediksi gender dengan akurasi tinggi berdasarkan ciri dan karakteristik wajah.</string>
+
+    <!-- Deskripsi Home -->
+    <string name="deskripsi_home">Aplikasi ini menggunakan dataset dari Kaggle untuk memprediksi gender berdasarkan ciri dan karakteristik wajah. Dataset diolah menggunakan TensorFlow, sebuah framework untuk pengolahan data dan pengembangan model machine learning, sehingga aplikasi dapat memberikan hasil prediksi yang akurat dan informatif.</string>
+
+    <!-- Sumber Dataset -->
+    <string name="sumber_dataset">Dataset yang digunakan dalam aplikasi ini bersumber dari Kaggle dengan akurasi tinggi. Anda dapat mengaksesnya melalui link berikut:</string>
+
+    <!-- Tujuan Aplikasi -->
+    <string name="tujuan_aplikasi">Tujuan dari aplikasi ini adalah untuk memprediksi gender dengan menganalisis ciri dan karakteristik wajah.</string>
+
+    <string name="cara_penggunaan1">Buka halaman simulasi model.</string>
+    <string name="cara_penggunaan2">Isilah formulir input sesuai dengan petunjuk. Jika data yang dimasukkan tidak sesuai atau tidak diisi, akan muncul pemberitahuan mengenai ketidaksesuaian atau kekosongan data.</string>
+    <string name="cara_penggunaan3">Klik tombol Prediksi untuk melihat hasil. Hasil prediksi akan menampilkan \'Perempuan\' atau \'Laki-laki\' sesuai dengan data yang diinputkan.</string>
+        <!-- Deskripsi ANN Model -->
+    <string name="desc_ann_model">Artificial Neural Network (ANN) adalah model komputasi yang terinspirasi oleh cara kerja sistem saraf manusia. Model ini terdiri dari lapisan-lapisan neuron yang saling terhubung, di mana setiap neuron menerima input, melakukan pemrosesan, dan mengirimkan output ke neuron berikutnya (Goodfellow et al., 2016).</string>
+
+    <!-- Deskripsi Akurasi Model -->
+    <string name="desc_accuracy_model">Akurasi model ini sangat tinggi, mencapai 94.74%. Ini berarti model dapat memprediksi dengan tingkat kepastian yang tinggi.</string>
+
+    <!-- String untuk lebar dahi -->
+    <string name="forehead_width_description">Kolom ini diukur dalam sentimeter (CM) dan merepresentasikan lebar dahi dengan rentang 11,4 cm hingga 15,5 cm.</string>
+
+    <!-- String untuk tinggi dahi -->
+    <string name="forehead_height_description">Kolom ini diukur dalam sentimeter (CM) dan merepresentasikan ketinggian dahi dengan rentang 5,1 cm hingga 7,1 cm.</string>
+
+    <!-- Deskripsi Distance Nose to Lip Long -->
+    <string name="distance_nose_to_lip_long_description">Kolom ini berisi nilai 0 dan 1, di mana:\n0: Jarak pendek antara hidung dan bibir (No)\n1: Jarak panjang antara hidung dan bibir (Yes)</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="biruungu">#C95E83CC</color>
+    <color name="ungumuda">#AD5E76CC</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="Accent">#a7eab7</color>
+    <color name="Lightblue">#ADD8E6</color>
+    <color name="darkblue">#1E90FF</color>
+    <color name="DarkBlue">#93B8D0</color>
+    <color name="BrightDarkBlue">#E6ADD8E6</color>
+    <color name="ungu1">#AD5E76AA</color>
+    <color name="ungu2">#AD5E7699</color>
+    <color name="ungu3">#D1869DBF</color>
+    <color name="pink">#D98CA3</color>
+    <color name="birumuda">#E1F5FE</color>
+    <color name="birumsage">#E8B5FDF5</color>
+    <color name="pinkfanta">#E4DC4773</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="abumuda">#F3F3F3</color>
+    <color name="putih_abu_gelap">#FAFAFA</color>
+    <color name="putih_abu_muda">#F5F5F5</color>
+    <color name="biruabu">#41386597</color>
+
+
+
+
+
+    #80DEEA
+    #E4ED60AE
+
+</resources>
